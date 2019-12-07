@@ -1,23 +1,17 @@
-#blog-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#blog-container a {
-  margin: 20px;
-}
+/* Error: expected ";".
+ *   ,
+ * 4 | @import "contact"
+ *   |                  ^
+ *   '
+ *   src/main.scss 4:18  root stylesheet */
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a   \2577 \a 4 \2502  @import "contact"\a   \2502                   ^\a   \2575 \a   src/main.scss 4:18  root stylesheet';
 }
-nav ul li {
-  list-style: none;
-}
-
-.centered-heading {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*# sourceMappingURL=main.css.map */
